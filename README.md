@@ -13,3 +13,9 @@ This dataset provides reviews and check-ins to classify the well-reviewed spots 
 tour-pedia.org/about/datasets.html
 
 Tourpedia gives the geographic locations of tourist spots. These locations may be looked up in the Yelp dataset to distinguish attractions.
+
+## Tech Stack
+The data in this project required cleansing and processing in an ETL pipeline. A variety of tools are being considered, however the following are being utilized.
+
+### Spark
+The data is being cleansed through a batch process.
