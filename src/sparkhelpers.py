@@ -75,42 +75,42 @@ def clean_data(spark_session, file_path):
             when(
                 isnull(col("subCategory")),
                 col("polarity")
-            ).otherwise("reviews")
+            ).otherwise(col("reviews"))
         )
         .withColumn(
             "tmp_category",
             when(
                 isnull(col("subCategory")),
                 col("lat")
-            ).otherwise("category")
+            ).otherwise(col("category"))
         )
         .withColumn(
             "lat",
             when(
                 isnull(col("subCategory")),
                 col("location")
-            ).otherwise("lat")
+            ).otherwise(col("lat"))
         )
         .withColumn(
             "location",
             when(
                 isnull(col("subCategory")),
                 col("lng")
-            ).otherwise("location")
+            ).otherwise(col("location"))
         )
         .withColumn(
             "lng",
             when(
                 isnull(col("subCategory")),
                 col("name")
-            ).otherwise("lng")
+            ).otherwise(col("lng"))
         )
         .withColumn(
             "name",
             when(
                 isnull(col("subCategory")),
                 col("category")
-            ).otherwise("name")
+            ).otherwise(col("name"))
         )
     )
     result.select(result.tmp_address.alias("address")).show()
