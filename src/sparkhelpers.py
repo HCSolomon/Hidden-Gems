@@ -4,6 +4,7 @@ from os import environ, listdir, path
 
 from pyspark import SparkFiles
 from pyspark.sql import SparkSession
+from pyspark.sql import functions as F
 
 
 def spark_start(master='local[*]', app_name='my_app', jar_packages=[], files=[], spark_config={}):
@@ -38,6 +39,11 @@ def spark_start(master='local[*]', app_name='my_app', jar_packages=[], files=[],
 
     return ss
 
+def clean_data(spark_session, file_path):
+    df = (
+        spark_session
+        .read
+        .csv(file_path)
+    )
     
-        
-            
+    df.where(F.isnull(F.col("_c9"))).show()
