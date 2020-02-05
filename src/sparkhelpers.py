@@ -4,7 +4,7 @@ from os import environ, listdir, path
 
 from pyspark import SparkFiles
 from pyspark.sql import SparkSession
-from pyspark.sql import functions as F
+from pyspark.sql.functions import when, isnull, col
 
 
 def spark_start(master='local[*]', app_name='my_app', jar_packages=[], files=[], spark_config={}):
@@ -43,7 +43,41 @@ def clean_data(spark_session, file_path):
     df = (
         spark_session
         .read
-        .csv(file_path)
+        .csv(file_path, header='true')
     )
     
-    df.where(F.isnull(F.col("_c9"))).show()
+
+    result = (
+        df
+        .withColumn(
+            "tmp_address",
+            when(
+                isnull(col("subCategory")),
+                col("id")
+            ).otherwise(col("address"))
+        )
+        .withColumn(
+            "tmp_id",
+            when(
+                isnull(col("subCategory")),
+                col("address")
+            ).otherwise(col("id"))
+        )
+        .withColumn(
+            "details",
+            when(
+                isnull(col("subCategory")),
+                col("originalId")
+            ).otherwise(col("details"))
+        )
+        .withColumn(
+            "reviews",
+            when(
+                isnull(col("subCategory")),
+                col("polarity")
+            )
+        )
+    )
+    result.select(result.tmp_address.alias("address"), result.tmp_id.alias("id")).show()
+    result.where(isnull(col("subCategory"))).show()
+    result.show()
