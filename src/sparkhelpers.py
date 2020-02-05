@@ -57,7 +57,7 @@ def clean_data(spark_session, file_path):
             ).otherwise(col("address"))
         )
         .withColumn(
-            "tmp_id",
+            "id",
             when(
                 isnull(col("subCategory")),
                 col("address")
@@ -75,9 +75,44 @@ def clean_data(spark_session, file_path):
             when(
                 isnull(col("subCategory")),
                 col("polarity")
-            )
+            ).otherwise("reviews")
+        )
+        .withColumn(
+            "tmp_category",
+            when(
+                isnull(col("subCategory")),
+                col("lat")
+            ).otherwise("category")
+        )
+        .withColumn(
+            "lat",
+            when(
+                isnull(col("subCategory")),
+                col("location")
+            ).otherwise("lat")
+        )
+        .withColumn(
+            "location",
+            when(
+                isnull(col("subCategory")),
+                col("lng")
+            ).otherwise("location")
+        )
+        .withColumn(
+            "lng",
+            when(
+                isnull(col("subCategory")),
+                col("name")
+            ).otherwise("lng")
+        )
+        .withColumn(
+            "name",
+            when(
+                isnull(col("subCategory")),
+                col("category")
+            ).otherwise("name")
         )
     )
-    result.select(result.tmp_address.alias("address"), result.tmp_id.alias("id")).show()
+    result.select(result.tmp_address.alias("address")).show()
     result.where(isnull(col("subCategory"))).show()
     result.show()
