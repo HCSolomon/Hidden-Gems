@@ -1,3 +1,5 @@
+import __main__
+
 from os import environ, listdir, path
 
 from pyspark import SparkFiles
@@ -32,8 +34,10 @@ def spark_start(master='local[*]', app_name='my_app', jar_packages=[], files=[],
         for key, val in spark_config.items():
             spark_builder.config(key, val)
 
-        ss = spark_builder.getOrCreate()
+    ss = spark_builder.getOrCreate()
 
     return ss
+
+    
         
             
