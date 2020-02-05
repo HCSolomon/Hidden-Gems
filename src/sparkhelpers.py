@@ -78,6 +78,20 @@ def clean_data(spark_session, file_path):
             ).otherwise(col("reviews"))
         )
         .withColumn(
+            "polarity",
+            when(
+                isnull(col("subCategory")),
+                None
+            ).otherwise(col("polarity"))
+        )
+        .withColumn(
+            "originalId",
+            when(
+                isnull(col("subCategory")),
+                None
+            ).otherwise(col("originalId"))
+        )
+        .withColumn(
             "tmp_category",
             when(
                 isnull(col("subCategory")),
