@@ -19,3 +19,6 @@ The data in this project required cleansing and processing in an ETL pipeline. A
 
 ### Spark
 The data is being cleansed through a batch process.
+
+## Current Engineering Problems
+02/05/2020 - The data from Tourpedia contains errors on numerous rows. Fortunately, the errors are all consistent in that the same fields are swapped and null. The current solution to this problem is just to utilize Spark dataframes to quickly create temporary columns to perform swaps where the errors are present. The fix is performed only on rows with the field `subCategory` is `null`. At the moment, all of the files are affected by these errors, but the data may all be cleansed in the same fashion.
