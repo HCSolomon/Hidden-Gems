@@ -127,6 +127,12 @@ def clean_data(spark_session, file_path):
             ).otherwise(col("name"))
         )
     )
-    result.select(result.tmp_address.alias("address")).show()
+
+    result = result.drop(*["address", "category"])
+    result = (
+        result
+        .withColumnRenamed("tmp_address", "address")
+        .withColumnRenamed("tmp_category", "category")
+    )
     result.where(isnull(col("subCategory"))).show()
     result.show()
