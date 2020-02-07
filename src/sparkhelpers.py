@@ -134,5 +134,5 @@ def clean_data(spark_session, file_path):
         .withColumnRenamed("tmp_address", "address")
         .withColumnRenamed("tmp_category", "category")
     )
-    result.where(isnull(col("subCategory"))).show()
-    result.show()
+    
+    return result
