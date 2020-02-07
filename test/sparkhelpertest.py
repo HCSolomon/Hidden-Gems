@@ -7,7 +7,7 @@ import unittest
 class SparkHelpersTest(unittest.TestCase):
     def test_spark_start(self):
         ss1 = spark_start()
-        df1 = ss1.read.csv('Hidden-Gems/test/amsterdam-accommodation.csv')
+        df1 = ss1.read.csv('Hidden-Gems/test/test_resources/Tourpedia/amsterdam-accommodation.csv')
 
         ss2 = spark_start()
         row = [('address', 'category', 'id', 'lat', 'lng', 'location', 'name', 'originalId', 'polarity', 'subCategory', 'details', 'reviews')]
@@ -16,7 +16,8 @@ class SparkHelpersTest(unittest.TestCase):
 
     def test_clean_data(self):
         ss = spark_start()
-        df = clean_data(ss, 'Hidden-Gems/test/amsterdam-accommodation.csv')
+        # df = clean_data(ss, 'Hidden-Gems/test/test_resources/Tourpedia/amsterdam-accommodation.csv')
+        df = clean_data(ss, 'Hidden-Gems/test/test_resources/Tourpedia/*.csv')
         result = (
             df
             .select("name")
@@ -24,6 +25,7 @@ class SparkHelpersTest(unittest.TestCase):
             .collect()[0]["name"]
         )
 
+        print("Dataframe size is", df.count())
         self.assertEqual(result, "Meininger Hotel Amsterdam")
 
 if __name__ == '__main__':

@@ -1,0 +1,94 @@
+2659086	Col de Recon	Col de Recon	Rapenaz  Col de,Recon  Col de	46.30352	6.82838	T	PASS	FR	CH	84	74	744	74058	0		1733	Europe/Paris	2019-02-15
+2659815	Lucelle	Lucelle	La Lucelle Riviere,La Lucelle Rivière,Lucelle,Lutzel,Lützel	47.41667	7.5	H	STM	FR		00				0		353	Europe/Paris	2014-08-05
+2659933	Les Cornettes de Bise	Les Cornettes de Bise	Cornettes de Bise,Les Cornettes de Bise	46.33263	6.78458	T	PK	FR	CH	84	74	744	74058	0	2432	2322	Europe/Paris	2019-02-16
+2659943	Lertzbach	Lertzbach	Le Lertzbach Ruisseau,Lertzbach,Ruisseau le Lertzbach	47.60479	7.54665	H	STM	FR	CH	00				0		246	Europe/Paris	2018-11-06
+2659973	Le Cheval Blanc	Le Cheval Blanc	Le Cheval Blanc	46.05193	6.87276	T	MT	FR	CH	84	74	742	74273	0	2831	2807	Europe/Paris	2019-03-28
+2660216	Jougnena	Jougnena	Jougnena,Jougnenaz,Jouguena,La Jougnena Ruisseau	46.71667	6.4	H	STM	FR	CH	00				0		787	Europe/Paris	2014-08-05
+2661811	London	London	Allondon,L'Allondon,La London Riviere,La London Rivière,London	46.16667	6.01667	H	STM	FR		00				0		427	Europe/Paris	2019-12-03
+2806878	Wolfesberg	Wolfesberg	Wolfers-Berg,Wolfesberg	49.29176	6.62355	T	HLL	FR		44				0		248	Europe/Paris	2018-08-07
+2842622	Saar River	Saar River	La Sarre Riviere,La Sarre Rivière,Saar,Saar River,Sarre	49.7	6.56667	H	STM	FR		00				0		134	Europe/Paris	2014-08-05
+2844740	Rosselle	Rosselle	La Rosselle Riviere,La Rosselle Rivière,La Rosselle Ruisseau,Rosel,Rossel,Rosselle	49.24558	6.83944	H	STM	FR	DE	00				0		184	Europe/Paris	2016-01-02
+2860840	Oberer Mundatwald	Oberer Mundatwald	Haute Foret du Mundat,Haute Forêt du Mundat,Oberer Mundatwald	49.05	7.9	V	FRST	FR		00				0		262	Europe/Paris	2014-08-05
+2863691	Nied	Nied	La Nied Francaise Riviere,La Nied Française Rivière,La Nied Riviere,La Nied Rivière,Nid,Nied,Nied Francaise,Nied Française,Rio Nied,ni de he,nyd,Нид,نید,尼德河	49.38333	6.66667	H	STM	FR	DE	00				0		199	Europe/Paris	2014-08-05
+2879881	Lautersberg	Lautersberg	Lautersberg,Le Lautersberg	49.32732	6.59401	T	HLL	FR	DE	44	57	573	57309	0		221	Europe/Paris	2019-03-26
+2898896	Horn	Horn	Horn,Hornbach,La Horn Riviere,La Horn Riviére,Trualbach	49.25	7.33333	H	STM	FR		00				0		251	Europe/Paris	2014-08-05
+2931193	Elenz Berg	Elenz Berg	Elenz Berg,Etenzberg	49.16984	6.84262	T	HLL	FR	DE	44	57	573	57484	0		213	Europe/Paris	2018-08-11
+2937262	Ruisseau de Diersdorff	Ruisseau de Diersdorff	Diersdorfer Bach,Oligbach,Ruisseau de Diersdorff	49.35	6.58333	H	STM	FR		00				0		183	Europe/Paris	2014-08-05
+2947760	Blies	Blies	Blesa,Blies,Blies Bach,Blies Riviere,Blies Rivière,Bliz,La Blies Riviere,La Blies Rivière,bu li si he,Близ,布利斯河	49.11667	7.06667	H	STM	FR	DE	00				0		202	Europe/Paris	2014-08-05
+2948197	Bisten	Bisten	Bist,Bisten,La Bisten Riviere,La Bisten Rivière	49.2722	6.7972	H	STM	FR	DE	00				0		181	Europe/Paris	2016-01-02
+2949298	Bickenalbe	Bickenalbe	Bicken Albe-Bach,Bickenalbe,Bickenhall Ruisseau,Die Bickenhall,La Bickenalbe Ruisseau	49.25	7.35	H	STM	FR	DE	00				0		224	Europe/Paris	2014-08-05
+2960355	Langenberg	Langenberg	Langenberg	49.46667	6.06667	T	RDGE	FR	LU	00				0		381	Europe/Paris	2014-08-05
+2960633	Ruisseau de Dudelange	Ruisseau de Dudelange	Diddelingerbaach,Didelingerbaach,Didelingerbach,Dudelange,Ruisseau de Dudelange	49.51667	6.1	H	STM	FR	LU	00				0		272	Europe/Paris	2014-08-05
+2967103	Peyrat-le-Château	Peyrat-le-Chateau	Pairac,Pairac dAimostier,Pejra-le-Shato,Peyrat,Peyrat-le-Chateau,Peyrat-le-Château,pei la lei sha tuo,Пейра-ле-Шато,佩拉勒沙托	45.81376	1.7726	P	PPL	FR		75	87	872	87117	1140		453	Europe/Paris	2019-09-04
+2967104	Soule	Soule	La Soule,Soule,Xiberuea,Xiberüa,Zuberoa	43.16667	-0.91667	L	RGN	FR		75	64			0		211	Europe/Paris	2016-02-18
+2967105	Île Boucheau	Ile Boucheau	Ile Bouchaud,Ile Boucheau,Ile du Grand Fagnard,Ile du Grand Fagnarg,Île Bouchaud,Île Boucheau,Île du Grand Fagnard,Île du Grand Fagnarg	45.16691	-0.69023	T	ISLX	FR		75				0		1	Europe/Paris	2016-02-18
+2967106	Val Godemard	Val Godemard	Val Godemar,Val Godemard	44.81667	6.11667	T	VAL	FR	FR	93	05			0		1001	Europe/Paris	2016-02-18
+2967107	Domecy-sur-le-Vault	Domecy-sur-le-Vault	Domecy,Domecy-sur-le-Vault	47.49084	3.80953	P	PPL	FR		27	89	892	89146	107		203	Europe/Paris	2016-02-18
+2967108	Blaye	Blaye	Blaia,Blaj,Blavia,Blaya,Blaye,Blaye-et-Sainte-Luce,Ble,blay,bu lai,burai,Блай,Бле,בלאי,بلای,ブライ,布莱	45.12764	-0.66225	P	PPLA3	FR		75	33	331	33058	5277		-9999	Europe/Paris	2020-01-08
+2967109	Zuytpeene	Zuytpeene	Zuytpeene	50.79473	2.43027	P	PPL	FR		32	59	594	59669	483		26	Europe/Paris	2016-02-18
+2967110	Zuydcoote	Zuydcoote	Zjujdkoot,Zuidcoote,Zuidkote,Zuudkote,Zuydcoote,ju yi de ke te,Зюйдкоот,聚伊德科特	51.06096	2.49338	P	PPL	FR		32	59	594	59668	1660		3	Europe/Paris	2016-02-18
+2967111	Zutzendorf	Zutzendorf	Zutzendorf	48.85435	7.54964	P	PPL	FR		44	67	674	67347	0		199	Europe/Paris	2018-06-08
+2967112	Zutkerque	Zutkerque	Zjutkerk,Zutkerque,ju kai er ke,zwtkyrkyw,Зюткерк,زوتكيركيو,聚凯尔克	50.85303	2.06818	P	PPL	FR		32	62	626	62906	1749		24	Europe/Paris	2019-03-26
+2967113	Zudausques	Zudausques	Judose,Zjudosk,Zudausques,ju duo si ke,zwadawskyws,Зюдоск,زواداوسكيوس,聚多斯克	50.74876	2.14762	P	PPL	FR		32	62	625	62905	632		86	Europe/Paris	2016-02-18
+2967114	Cime du Zuccarello	Cime du Zuccarello	Cima del Zuccarello,Cime du Zuccarello,Sommet de Zuccarelle	42.62848	9.38394	T	PK	FR		94	2B	2B5	2B185	0		698	Europe/Paris	2019-02-21
+2967115	Zuani	Zuani	Cuani,Dzuani,Zuani,Zùani,Дзуани,Цуани,Цуані	42.27121	9.34644	P	PPL	FR		94	2B	2B3	2B364	55		797	Europe/Paris	2019-02-21
+2967116	Zoza	Zoza	Zoza	41.71775	9.07054	P	PPL	FR		94	2A	2A4	2A363	52		339	Europe/Paris	2019-02-21
+2967117	Zoufftgen	Zoufftgen	Cousftgen,Suftgen,Zoufftgen	49.46163	6.13327	P	PPL	FR		44	57	577	57764	623		240	Europe/Paris	2016-02-21
+2967118	Zouafques	Zouafques	Zouafques,Zuafk,Zuave,zu wa fu ke,zwafkyws,Зуафк,زوافكيوس,祖瓦夫克	50.81336	2.05331	P	PPL	FR		32	62	625	62904	424		34	Europe/Paris	2016-02-18
+2967119	Zoteux	Zoteux	Zote,Zoteux,Zotiu,zuo te,zwtywks,Зоте,زوتيوكس,佐特	50.61067	1.8793	P	PPL	FR		32	62	624	62903	401		155	Europe/Paris	2016-02-18
+2967120	Zoteux	Zoteux	Les Auteux,Zoteux	50.07498	1.68993	P	PPL	FR		32	80	801	80004	0		57	Europe/Paris	2016-02-18
+2967121	Punta di Zorpi	Punta di Zorpi	Pointe de Zorpi,Punta di Zorpi	42.10405	9.15126	T	PK	FR		94	2B	2B3	2B124	0		1613	Europe/Paris	2019-05-08
+2967122	Zorn	Zorn	La Zorn Riviere,La Zorn Rivière,Zorn,zwrn,Зорн,זורן	48.75203	7.91565	H	STM	FR	FR	44	67			0		122	Europe/Paris	2016-02-18
+2967123	Forêt Territoriale de Zonza	Foret Territoriale de Zonza	Foret Territoriale de Zonza,Foret de Zonza,Forêt Territoriale de Zonza,Forêt de Zonza	41.73685	9.20977	V	FRST	FR		94	2A			0		1108	Europe/Paris	2019-02-21
+2967124	Ruisseau de Pian di Santu	Ruisseau de Pian di Santu	Riviere della Zonza,Rivière della Zonza,Ruisseau de Pian di Santu,Zonza	41.73846	9.13751	H	STM	FR		94	2A			0		660	Europe/Paris	2019-02-21
+2967125	Zonza	Zonza	Conca,Dzondza,Zonza,Дзондза,Цонца	41.74934	9.17082	P	PPL	FR		94	2A	2A4	2A362	1888		761	Europe/Paris	2019-02-21
+2967126	Zommange	Zommange	Zommange	48.82416	6.80431	P	PPL	FR		44	57	575	57763	36		219	Europe/Paris	2019-03-26
+2967127	Zollingen	Zollingen	Zollingen	48.90986	7.07434	P	PPL	FR		44	67	674	67435	0		229	Europe/Paris	2016-02-18
+2967128	Zoebersdorf	Zoebersdorf	Zœbersdorf	48.79358	7.52538	P	PPL	FR		44	67	674	67153	0		213	Europe/Paris	2019-03-28
+2967129	Capu di Zivia	Capu di Zivia	Cap de Zivia,Capu di Zivia,Pointe Latoniccia	41.51984	8.84339	T	CAPE	FR		94				0		-9999	Europe/Paris	2019-02-21
+2967130	Zittersheim	Zittersheim	Zittersheim	48.89932	7.34759	P	PPL	FR		44	67	674	67559	220		248	Europe/Paris	2018-06-08
+2967131	Zintzel du Sud	Zintzel du Sud	La Zintzel du Sud Riviere,La Zintzel du Sud Rivière,Zinsel,Zintzel Riviere,Zintzel Rivière	48.76337	7.41976	H	STM	FR	FR	44	67			0		172	Europe/Paris	2016-02-18
+2967132	Zinzel du Nord	Zinzel du Nord	La Zintzel du Nord Ruisseau,Zintzel du Nord,Zinzel du Nord	48.82394	7.73959	H	STM	FR		44	67			0		147	Europe/Paris	2018-06-08
+2967133	Zinswiller	Zinswiller	Zensweiler,Zinsweiler	48.91979	7.58984	P	PPL	FR		44	67	672	67558	802		181	Europe/Paris	2016-02-18
+2967134	Ruisseau de Zingajo	Ruisseau de Zingajo	Rio di Zingaio,Ruisseau de Zincajo,Ruisseau de Zingajo	42.27944	9.22333	H	STM	FR		94	2B			0		297	Europe/Paris	2019-02-21
+2967135	Zincourt	Zincourt	Zincourt	48.30709	6.43877	P	PPL	FR		44	88	881	88532	81		341	Europe/Paris	2016-02-21
+2967136	Zimming	Zimming	Zimming	49.12372	6.58829	P	PPL	FR		44	57	573	57762	649		379	Europe/Paris	2019-03-26
+2967137	Zimmersheim	Zimmersheim	Zimmersheim	47.72079	7.38847	P	PPL	FR		44	68	684	68386	1080		263	Europe/Paris	2018-11-06
+2967138	Zimmerbach	Zimmerbach		48.07361	7.23578	P	PPL	FR		44	68	682	68385	904		302	Europe/Paris	2016-02-18
+2967139	Zillisheim	Zillisheim	Zillisajm,Zillisheim,Зиллисайм,Зіллісайм	47.69604	7.29736	P	PPL	FR		44	68	684	68384	2537		260	Europe/Paris	2018-11-06
+2967140	Zilling	Zilling	Zillen,Zilling,Zillingen,qi lan,tsylyng,Зиллен,Зіллен,تسیلینگ,齐兰	48.78373	7.21117	P	PPL	FR		44	57	575	57761	251		270	Europe/Paris	2018-07-04
+2967141	Zilia	Zilia	Cilija,Ziglia,Zilia,Цилия,Цилія	42.53024	8.90174	P	PPL	FR		94	2B	2B5	2B361	230		617	Europe/Paris	2019-02-21
+2967142	Rocher de Ziglione	Rocher de Ziglione	Ilot Ziglione,L'Ilot Ziglione,L'Îlot Ziglione,Rocher de Ziglione,Îlot Ziglione	41.59403	9.30428	T	RK	FR		94				0		-9999	Europe/Paris	2019-12-03
+2967143	Zigliara	Zigliara	Zigliara	41.84652	8.99426	P	PPL	FR		94	2A	2A1	2A360	130		428	Europe/Paris	2019-05-08
+2967144	Zivignola	Zivignola	Zifignola,Zivignola	41.75268	8.8093	P	PPL	FR		94	2A	2A1	2A276	0		168	Europe/Paris	2019-02-21
+2967145	Zicavo	Zicavo	Cikavo,Dzikavo,Zicavo,Zicavu,Zìcavu,Дзикаво,Цикаво	41.90799	9.12938	P	PPL	FR		94	2A	2A1	2A359	250		896	Europe/Paris	2019-05-08
+2967146	Zévaco	Zevaco	Zevaco,Zévaco	41.89242	9.04931	P	PPL	FR		94	2A	2A1	2A358	59		687	Europe/Paris	2019-05-08
+2967147	Zérubia	Zerubia	Zerubia,Zérubia	41.75271	9.07538	P	PPL	FR		94	2A	2A4	2A357	0		940	Europe/Paris	2019-02-21
+2967148	Zermezeele	Zermezeele	Zermezeele	50.82478	2.45095	P	PPL	FR		32	59	594	59667	181		29	Europe/Paris	2016-02-18
+2967149	Liscu	Liscu	Lenti Riviere,Lenti Rivière,Liscu,Riviere de Zente,Rivière de Zente,Zente	42.72447	9.19862	H	STM	FR		94	2B			0		12	Europe/Paris	2019-02-21
+2967150	Zembs	Zembs	La Zembs Riviere,La Zembs Rivière,Zembs	48.42551	7.71089	H	STM	FR		44	67			0		149	Europe/Paris	2018-06-08
+2967151	Zelucq	Zelucq		50.51005	1.69264	P	PPL	FR		32	62	624	62832	0		9	Europe/Paris	2016-02-18
+2967152	Zelsheim	Zelsheim		48.29855	7.64322	P	PPL	FR		44	67	675	67146	0		162	Europe/Paris	2016-02-18
+2967153	Zellwiller	Zellwiller	Zellwiller	48.3973	7.49666	P	PPL	FR		44	67	675	67557	764		160	Europe/Paris	2018-06-08
+2967154	Zellenberg	Zellenberg	Zellenberg,Зелленберг	48.16946	7.32007	P	PPL	FR		44	68	682	68383	411		280	Europe/Paris	2019-03-26
+2967155	Zeinheim	Zeinheim	Kauffenheim,Zaeaene,Zeinheim,Zenajm,Zääne,tsaynhaym,ze nan,zynhym,Зенайм,تساینهایم,زينهيم,泽南	48.67283	7.48632	P	PPL	FR		44	67	673	67556	160		216	Europe/Paris	2019-03-26
+2967156	Zehnacker	Zehnacker	Zehnacker	48.6713	7.45079	P	PPL	FR		44	67	673	67555	227		239	Europe/Paris	2019-03-26
+2967157	Zegerscappel	Zegerscappel		50.88333	2.4	P	PPL	FR		32	59	594	59666	1228		19	Europe/Paris	2016-02-18
+2967158	Zarbeling	Zarbeling	Zarbeling	48.89086	6.6879	P	PPL	FR		44	57	575	57759	62		265	Europe/Paris	2019-03-26
+2967159	Zanière	Zaniere	Zaniere,Zanieres,Zanière,Zanières	45.43316	3.0768	P	PPL	FR		84	63	633	63087	0		1050	Europe/Paris	2016-02-18
+2967160	Zalana	Zalana	Zalana	42.26064	9.37539	P	PPL	FR		94	2B	2B3	2B356	142		381	Europe/Paris	2019-02-21
+2967161	Zagat	Zagat		45.38426	3.08691	P	PPL	FR		84	63	633	63009	0		952	Europe/Paris	2016-02-18
+2967162	Zaessingue	Zaessingue	Zaessingue	47.62553	7.36544	P	PPL	FR		44	68	684	68382	268		348	Europe/Paris	2018-11-06
+2967163	Yzosse	Yzosse	Yzosse	43.71167	-1.01286	P	PPL	FR		75	40	401	40334	400		11	Europe/Paris	2020-01-08
+2967164	Yzeux	Yzeux	Yseux,Yzeux	49.97556	2.10731	P	PPL	FR		32	80	802	80835	221		16	Europe/Paris	2016-02-18
+2967165	Yzeures-sur-Creuse	Yzeures-sur-Creuse	Izer sir Krez,Izer-sjur-Krez,Yzeures,Yzeures-sur-Creuse,ke lei si he pan yi ze lei,Ізер-сюр-Крез,Изер сир Крез,یزیرس-سر-کراسے,克勒斯河畔伊泽雷	46.78609	0.87166	P	PPL	FR		24	37	373	37282	1550		72	Europe/Paris	2016-02-18
+2967166	Yzeure	Yzeure	Isodrus,Izer,Izjor,Yzeure,yi ze er,Ізер,Изер,Изёр,یزیرے,伊泽尔	46.56596	3.35446	P	PPL	FR		84	03	032	03321	13435		244	Europe/Paris	2019-04-10
+2967167	Yzeron	Yzeron	Izeron,L'Yzeron Riviere,L'Yzeron Rivière,Yzeron	45.74083	4.76649	H	STM	FR		84	69			0		193	Europe/Paris	2019-12-03
+2967168	Yzeron	Yzeron	Yzeron,Yzeron-et-Chateauvreux,Yzeron-et-Châteauvreux	45.7081	4.59106	P	PPL	FR		84	69	691	69269	0		697	Europe/Paris	2019-06-05
+2967169	Yzernay	Yzernay	Yzernay	47.02229	-0.70295	P	PPL	FR		52	49	492	49381	1565		170	Europe/Paris	2016-02-18
+2967170	Yzengremer	Yzengremer	Izangreme,Yzengremer,Zinguermeu,Zinguérmeu,yi cang ge lei mei er,yzngrymr,Ізангреме,یزنگریمر,伊藏格雷梅尔	50.06141	1.52229	P	PPL	FR		32	80	801	80834	555		111	Europe/Paris	2016-02-18
+2967171	Ruisseau l'Yvron	Ruisseau l'Yvron	L'Yvron Ruisseau,Ruisseau l'Yvron,Yoron Riviere,Yoron Rivière	48.65648	2.92448	H	STM	FR		11	77			0		82	Europe/Paris	2019-12-03
+2967172	Yvrencheux	Yvrencheux	Yvrencheux	50.18272	1.99629	P	PPL	FR		32	80	801	80833	140		113	Europe/Paris	2016-02-18
+2967173	Yvrench	Yvrench	Yvrench	50.17905	2.00318	P	PPL	FR		32	80	801	80832	253		108	Europe/Paris	2016-02-18
+2967174	Yvré-l'Évêque	Yvre-l'Eveque	Yvre,Yvre-l'Eveque,Yvre-sur-l'Huisne,Yvré,Yvré-l'Évêque,Yvré-sur-l'Huisne	48.01418	0.26636	P	PPL	FR		52	72	723	72386	0		64	Europe/Paris	2019-12-03
+
