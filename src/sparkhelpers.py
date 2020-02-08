@@ -4,7 +4,7 @@ from os import environ, listdir, path
 
 from pyspark import SparkFiles
 from pyspark.sql import SparkSession, DataFrameWriter
-from pyspark.sql.functions import when, isnull, col
+from pyspark.sql.functions import when, isnull, col, explode, split
 
 
 def spark_start(master='local[*]', app_name='my_app', jars=[], files=[], spark_config={}):
@@ -46,7 +46,9 @@ def clean_data(spark_session, file_path):
         .csv(file_path, header='true')
     )
     
-
+    maps = dict(zip(
+        ['tmp_address','id','details','reviews','polarity','originalId','tmp_category','lat','location','lng','name'],
+        ['id','address','originalId','polarity','subCategory','subCategory','lat','location','lng','name','category']))
     result = (
         df
         .withColumn(
@@ -127,7 +129,10 @@ def clean_data(spark_session, file_path):
             ).otherwise(col("name"))
         )
     )
-
+    # for c in df.columns:
+    #     print(c, maps.get(c, c))
+    # [print((col(c), when(isnull(col("subCategory")), col(maps.get(c, c))).otherwise(col(c)))) for c in maps.keys()]
+    # result = df.withColumn([(col(c), when(isnull(col("subCategory")), col(maps.get(c, c))).otherwise(col(c))) for c in df.columns])
     result = result.drop(*["address", "category"])
     result = (
         result
@@ -137,7 +142,14 @@ def clean_data(spark_session, file_path):
     
     return result
 
-def write_to_checkins(df):
+def write_to_checkins(ss, file_path):
+    df = ss.read.json(file_path)
+    cols = set(df.columns)
+
+    if (cols != set(['business_id', 'date'])):
+        print("** Warning: The file provided in write_to_checkins does not have the correct schema. **")
+        return
+
     url = "jdbc:postgresql://localhost:5432/hiddengems_db"
     table = "checkins"
     mode = "overwrite"
@@ -146,5 +158,8 @@ def write_to_checkins(df):
         "password": "password", 
         "driver": "org.postgresql.Driver"
         }
+
+    df = df.select('*', explode(split('date', ', ')))
+    df = df.drop(col('date')).withColumnRenamed('col','date')
     
     df.write.jdbc(url, table, mode, properties)
