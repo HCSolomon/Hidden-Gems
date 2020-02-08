@@ -3,11 +3,11 @@ import __main__
 from os import environ, listdir, path
 
 from pyspark import SparkFiles
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession, DataFrameWriter
 from pyspark.sql.functions import when, isnull, col
 
 
-def spark_start(master='local[*]', app_name='my_app', jar_packages=[], files=[], spark_config={}):
+def spark_start(master='local[*]', app_name='my_app', jars=[], files=[], spark_config={}):
     flag_repl = not(hasattr(__main__, '__file__'))
     flag_debug = 'DEBUG' in environ.keys()
 
@@ -26,8 +26,8 @@ def spark_start(master='local[*]', app_name='my_app', jar_packages=[], files=[],
             .appName(app_name)
         )
 
-        spark_jars_packages = ','.join(jar_packages)
-        spark_builder.config('spark.jars.packages', spark_jars_packages)
+        spark_jars = ','.join(jars)
+        spark_builder.config('spark.jars', spark_jars)
 
         spark_files = ','.join(files)
         spark_builder.config('spark.files', spark_files)
@@ -136,3 +136,15 @@ def clean_data(spark_session, file_path):
     )
     
     return result
+
+def write_to_checkins(df):
+    url = "jdbc:postgresql://localhost:5432/hiddengems_db"
+    table = "checkins"
+    mode = "overwrite"
+    properties = {
+        "user": "postgres", 
+        "password": "password", 
+        "driver": "org.postgresql.Driver"
+        }
+    
+    df.write.jdbc(url, table, mode, properties)
