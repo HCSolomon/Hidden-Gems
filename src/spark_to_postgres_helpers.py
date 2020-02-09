@@ -23,3 +23,18 @@ def write_to_checkins(ss, file_path):
     df = df.drop(col('date')).withColumnRenamed('col','date')
     
     df.write.jdbc(url, table, mode, properties)
+
+def write_to_table(ss, table, file_path, drop_cols):
+    df = ss.read.json(file_path)
+
+    url = "jdbc:postgresql://localhost:5432/hiddengems_db"
+    mode = "overwrite"
+    properties = {
+        "user": "postgres", 
+        "password": "password", 
+        "driver": "org.postgresql.Driver"
+        }
+
+    df = df.drop(*drop_cols)
+
+    df.write.jdbc(url, table, mode, properties)
