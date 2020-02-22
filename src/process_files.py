@@ -1,24 +1,40 @@
+from sparkhelpers import spark_start
+from pyspark.sql import SparkSession
+from spark_to_postgres_helpers import write_to_table, write_to_checkins
+
+import os
 import boto3
+import time
 
 def main():
     s3 = boto3.client('s3')
+    os.environ['PYSPARK_SUBMIT_ARGS'] = "--packages=org.apache.hadoop:hadoop-aws:2.7.3 pyspark-shell"
+    aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
+    aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 
-    aws_access_key_id = input('Please enter your AWS Access Key ID:\n')
-    aws_secret_access_key = input('Please enter your AWS Secret Access Key:\n')
+    master = os.getenv('SPARK_MASTER_IP')
 
-    config = {
-        'fs.s3n.awsAccessKeyId':aws_access_key_id,
-        'fs.s3n.awsSecretAccessKey':aws_secret_access_key
-    }
+    spark_session = spark_start(master, 'hidden-gems', [], [], {})
+    sc = spark_session.sparkContext
 
-    bucket = input('Specify the name of the bucket to be processed:\n')
-    file_type = input('Type of files to be processed:\n')
+    hadoop_conf = sc._jsc.hadoopConfiguration()
+    hadoop_conf.set('fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem')
+    hadoop_conf.set('fs.s3a.access.key', aws_access_key_id)
+    hadoop_conf.set('fs.s3a.secret.key', aws_secret_access_key)
 
+    # bucket = input('Specify the name of the bucket to be processed:\n')
+    # file_type = input('Type of files to be processed:\n')
+    bucket = 'yelpreview-data'
+    file_type = 'json'
     keys = [obj['Key'] for obj in s3.list_objects_v2(Bucket=bucket)['Contents'] if obj['Key'].split('.')[-1] == file_type]
     
-    files = ['s3n://{}/{}'.format(bucket, key) for key in keys]
-    
-    
+    for key in keys:
+        if (key != 'checkin.json'):
+            print(key)
+            file_path = 's3a://{}/{}'.format(bucket, key)
+            write_to_table(spark_session, 'hiddengems_db', file_path, ['attributes','hours'])
+        else:
+            write_to_checkins(ss, file_path)
 
 if __name__ == "__main__":
     main()
