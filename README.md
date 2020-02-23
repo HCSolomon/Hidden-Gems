@@ -40,3 +40,5 @@ Stores the raw data from all the datasets used.
 02/05/2020 - The data from Tourpedia contains errors on numerous rows. Fortunately, the errors are all consistent in that the same fields are swapped and null. The current solution to this problem is just to utilize Spark dataframes to quickly create temporary columns to perform swaps where the errors are present. The fix is performed only on rows with the field `subCategory` is `null`. At the moment, all of the files are affected by these errors, but the data may all be cleansed in the same fashion.
 
 02/07/2020 - The data from Tourpedia includes useful information from countries outside of the US. The Yelp dataset mostly contains data about US businesses. A new dataset, GeoNames, was added to account for points of interest (POIs) in the US.
+
+02/22/2020 - A transfer of data cannot be made from S3 to PostgreSQL as there is too much data. Transformations will be done through Spark to ensure a reduction of information.

@@ -9,12 +9,13 @@ import time
 def main():
     s3 = boto3.client('s3')
     os.environ['PYSPARK_SUBMIT_ARGS'] = "--packages=org.apache.hadoop:hadoop-aws:2.7.3 pyspark-shell"
+    sparkClassPath = os.getenv('SPARK_CLASSPATH', '~/.local/lib/python3.5/site-packages/pyspark/jars/postgresql-42.2.10.jar')
     aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
     aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 
     master = os.getenv('SPARK_MASTER_IP')
 
-    spark_session = spark_start(master, 'hidden-gems', [], [], {})
+    spark_session = spark_start(master, 'hidden-gems', [sparkClassPath], [], {})
     sc = spark_session.sparkContext
 
     hadoop_conf = sc._jsc.hadoopConfiguration()
@@ -30,11 +31,10 @@ def main():
     
     for key in keys:
         if (key != 'checkin.json'):
-            print(key)
             file_path = 's3a://{}/{}'.format(bucket, key)
-            write_to_table(spark_session, 'hiddengems_db', file_path, ['attributes','hours'])
+            write_to_table(spark_session, key.split('.')[0], file_path, ['attributes','hours'])
         else:
-            write_to_checkins(ss, file_path)
+            write_to_checkins(spark_session, file_path)
 
 if __name__ == "__main__":
     main()
